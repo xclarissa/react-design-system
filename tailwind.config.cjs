@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.tsx',
-  ],
+  content: ["./src/**/*.tsx"],
   theme: {
     fontSize: {
       xs: 14,
@@ -10,23 +8,31 @@ module.exports = {
       md: 18,
       lg: 20,
       xl: 24,
-      '2xl': 32,
+      "2xl": 32,
     },
     extend: {
       colors: {
-        'gray-900': '#121214',
-        'gray-800': '#202024',
-        'gray-400': '#7c7c8a',
-        'gray-200': '#c4c4cc',
-        'gray-100': '#e1e1e6',
+        transparent: 'transparent',
+        black: "#000",
+        white: "#FFF",
 
-        'cyan-500': "#81d8f7",
-        'cyan-300': "#C4EFFE"
+        gray: {
+          900: "#121214",
+          800: "#202024",
+          400: "#7c7c8a",
+          200: "#c4c4cc",
+          100: "#e1e1e6",
+        },
+
+        cyan: {
+          500: "#81d8f7",
+          300: "#C4EFFE",
+        },
       },
       fontFamily: {
-        sans: 'Inter, sans-serif'
-      }
+        sans: "Inter, sans-serif",
+      },
     },
   },
   plugins: [],
-}
+};
